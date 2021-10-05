@@ -25,15 +25,15 @@
 
 ## Implementation
 
-Manual calculation (very trivial) or write a simple script to calculate.
+Manual calculation (very trivial) or write a [**<u>simple script</u>**](https://github.com/lym01803/CS382_hw1_toy_ppl/tree/main) to calculate.
 
 ## Example 
 
 For 021033210023: tokenize it and get ```<s>, 0, 2, 1, 0, 3, 3, 2, 1, 0, 0, 2, 3, </s>``` 
 
-$$\begin{array}{ll}\lg P &= \lg\mathtt{Pr}(0|<s>) + \lg \mathtt{Pr}(2|<s>,0)+ \lg\mathtt{Pr}(1|0, 2) + \lg\mathtt{Pr}(0|2, 1) + \lg\mathtt{Pr}(3|1, 0) + \cdots+\lg\mathtt{Pr}(</s>|2, 3)\\ &=-2.2372083-0.8515801-0.2787536-1.3873339-0.3646991-\cdots-0.8381492=-15.816092327000002\end{array}$$
+$$\begin{array}{ll}\lg P &= \lg\mathtt{Pr}(0|<s>) + \lg \mathtt{Pr}(2|<s>,0)+ \lg\mathtt{Pr}(1|0, 2) + \lg\mathtt{Pr}(0|2, 1) + \lg\mathtt{Pr}(3|1, 0) + \cdots+\lg\mathtt{Pr}(</s>|2, 3)\\ &=-2.2372083-0.8515801-0.2787536-1.3873339-0.3646991-\cdots-0.8381492=-15.8160923\end{array}$$
 
-$ppl=2^{\log_2{10}\cdot\frac{1}{13}\cdot (-\lg P)}=16.467303381304$
+$ppl=2^{\log_2{10}\cdot\frac{1}{13}\cdot (-\lg P)}=16.4673033$
 
 ## Result
 
